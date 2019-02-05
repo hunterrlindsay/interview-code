@@ -1,0 +1,7 @@
+require 'sinatra'
+
+get '/' do
+     input = params['input']
+     erb :index, :locals => {:input => input}
+end
+
